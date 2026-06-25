@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import NavBar from './Pages/NavBar/NavBar'
+import NavBar from './Components/NavBar/NavBar'
 import Solustech from './Pages/Home/Solustech'
 
 function App() {
