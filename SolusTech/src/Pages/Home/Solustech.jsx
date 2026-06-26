@@ -21,10 +21,40 @@ function Solustech() {
         </div>
       </section>
 
-      <section className={styles.resto}>
-        <h2>Resto do site</h2>
-        <p>.........</p>
+
+
+      <section className={styles.sobre}>
+        <div className={styles.sobreContainer}> 
+         <span>Sobre a SolusTech</span>
+          <h2>Energia limpa, inteligente e ao seu alcance.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rem, consectetur dolorem blanditiis id voluptates nam, nesciunt nihil modi reiciendis cum libero, quisquam autem sit. Commodi iste itaque excepturi reprehenderit?</p>
+
+{/*imagem lateral*/ }
+
+        </div>
       </section>
+
+
+<section className={styles.beneficios}>
+{/* beneficios que a solustech tem*/ }
+</section>
+
+<section className={styles.funcionamento}>
+{/* funcionamento da solusetch*/ }
+</section>
+
+<section className={styles.serviços}>
+{/* serviçoes oferecidos*/ }
+</section>
+
+<section className={styles.orcamento}>
+{/* orçamento*/ }
+</section>
+
+<section className={styles.footer}>
+{/* footer*/ }
+</section>
+
     </>
   );
 }
