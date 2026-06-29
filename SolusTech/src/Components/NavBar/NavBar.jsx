@@ -6,7 +6,7 @@ function NavBar() {
       <div className={styles.container}>
         <h1>SolusTech</h1>
         <ul>
-          <li>Inicio</li>
+          <li className={styles.inicio}>Inicio</li>
           <li >Compre sua Placa</li>
           <li>Minha Casa</li>
           <li className={styles.login}>Login</li>
