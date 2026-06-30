@@ -7,8 +7,7 @@
   font-family: "Rubik", sans-serif;
 }
 
-/* Centraliza a tela de login */
-body {
+.container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,7 +19,7 @@ body {
   background-size: cover;
 }
 
-.container {
+.form {
   width: 420px;
   padding: 30px 40px;
 
@@ -35,19 +34,19 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.container h1 {
+.form h1 {
   text-align: center;
   font-size: 36px;
 }
 
-.input-box {
+.inputBox {
   position: relative;
   width: 100%;
   height: 50px;
   margin: 30px 0;
 }
 
-.input-box input {
+.inputBox input {
   width: 100%;
   height: 100%;
 
@@ -63,11 +62,11 @@ body {
   background: transparent;
 }
 
-.input-box input::placeholder {
+.inputBox input::placeholder {
   color: rgb(201, 201, 201);
 }
 
-.input-box i {
+.inputBox i {
   position: absolute;
   right: 20px;
   top: 50%;
@@ -76,7 +75,7 @@ body {
   font-size: 20px;
 }
 
-.remember-forgot {
+.rememberForgot {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,22 +84,22 @@ body {
   font-size: 14px;
 }
 
-.remember-forgot label {
+.rememberForgot label {
   display: flex;
   align-items: center;
 }
 
-.remember-forgot input {
+.rememberForgot input {
   margin-right: 5px;
   accent-color: white;
 }
 
-.remember-forgot a {
+.rememberForgot a {
   color: white;
   text-decoration: none;
 }
 
-.remember-forgot a:hover {
+.rememberForgot a:hover {
   text-decoration: underline;
 }
 
@@ -120,7 +119,6 @@ body {
   font-weight: 600;
 
   cursor: pointer;
-
   transition: 0.3s;
 }
 
@@ -146,19 +144,17 @@ body {
   text-decoration: underline;
 }
 
-/* Responsividade */
-
 @media (max-width: 480px) {
-  .container {
+  .form {
     width: 90%;
     padding: 25px;
   }
 
-  .container h1 {
+  .form h1 {
     font-size: 30px;
   }
 
-  .remember-forgot {
+  .rememberForgot {
     flex-direction: column;
     gap: 10px;
   }

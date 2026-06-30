@@ -1,23 +1,23 @@
-import "./Login.module.css";
-import "boxicons/css/boxicons.min.css"
+import styles from "./login.module.css";
+import "boxicons/css/boxicons.min.css";
 
 function Login() {
   return (
-    <main className="container">
-      <form>
+    <main className={styles.container}>
+      <form className={styles.form}>
         <h1>Login</h1>
 
-        <div className="input-box">
+        <div className={styles.inputBox}>
           <input type="email" placeholder="Usuário" />
           <i className="bx bxs-user"></i>
         </div>
 
-        <div className="input-box">
+        <div className={styles.inputBox}>
           <input type="password" placeholder="Senha" />
           <i className="bx bxs-lock-alt"></i>
         </div>
 
-        <div className="remember-forgot">
+        <div className={styles.rememberForgot}>
           <label>
             <input type="checkbox" />
             Lembrar senha
@@ -26,11 +26,11 @@ function Login() {
           <a href="#">Esqueci a senha</a>
         </div>
 
-        <button type="submit" className="login">
+        <button type="submit" className={styles.login}>
           Login
         </button>
 
-        <div className="register">
+        <div className={styles.register}>
           <p>
             Não tem conta? <a href="#">Cadastre-se</a>
           </p>
@@ -40,4 +40,4 @@ function Login() {
   );
 }
 
-export default Login
+export default Login;

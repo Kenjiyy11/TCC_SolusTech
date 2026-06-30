@@ -1,21 +1,13 @@
-import { useState } from 'react'
-
-import NavBar from './Components/NavBar/NavBar'
+import { Routes, Route } from 'react-router-dom'
 import Solustech from './Pages/Home/Solustech'
+import Login from './Pages/Home/login/Login.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-
   return (
-      <div>
-      
-      <NavBar />
-      <Solustech />
-
-      </div>
-
-
+    <Routes>
+      <Route path="/" element={<Solustech />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   )
 }
 

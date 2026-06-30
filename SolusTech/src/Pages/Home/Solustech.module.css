@@ -1,5 +1,6 @@
 .hero {
     height: 100vh;
+    min-height: 100vh;
 
     background:
         linear-gradient(
@@ -21,55 +22,455 @@
     color: white;
 }
 
-
 .heroContent {
-  width: 490px;
-  margin-top: 4rem;
- font-family: 'Inter';
-  text-align: center;
-  color: #ffffff;
-  margin-left: 2rem;
-
-
-
-   
-
-
+    width: 490px;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-family: 'Inter';
+    text-align: center;
+    color: #ffffff;
 }
 
 .subtitulo {
-  text-align: center;
-  font-size: 16.8px;
-  position: absolute;
-  margin-top: 2.5rem;
+    text-align: center;
+    font-size: 16.8px;
+    position: absolute;
+    margin-top: 2.5rem;
 }
 
 .botao {
-  background-color: rgba(215, 162, 70, 1);
-  font-size: 25px;
-  margin-top: 8rem;
-  position: relative;
-  padding: 18px;
-  border-radius: 10px;
-  border: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  color: #000000;
-  cursor: pointer;
-  transition: transform 0.8s ease, box-shadow 0.8s ease;
+    background-color: rgba(215, 162, 70, 1);
+    font-size: 25px;
+    margin-top: 8rem;
+    position: relative;
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
 }
 
 .botao:hover {
-  transform: translateY(-5px) scale(1.02);
-  transition: 0.8s ease;
-  box-shadow: 0 15px 40px rgba(255, 208, 0, 0.3);
-  background-color: rgb(206, 154, 65);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(255, 208, 0, 0.3);
+    background-color: rgb(206, 154, 65);
+    transition: 0.8s ease;
 }
 
 .sobre {
-  height: 100vh;
-  background-color: #f4f4f4;
-  padding: 50px;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 50px;
+
+    /* coloca texto e imagem lado a lado */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sobreContainer {
+    flex: 1;
+}
+
+/* imagem lateral */
+.sobreImg {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.beneficios {
+    padding: 80px 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.beneficiosLabel {
+    font-size: 13px;
+    font-family: 'Inter';
+    letter-spacing: 2px;
+    color: rgba(215, 162, 70, 1);
+    text-transform: uppercase;
+}
+
+.beneficiosTitulo {
+    font-size: 28px;
+    font-family: 'Inter';
+    margin-top: 8px;
+    margin-bottom: 40px;
+    color: #1f1f1f;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    padding: 32px 24px;
+    flex: 1;
+    max-width: 260px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cardIcon {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    margin-bottom: 16px;
+
+    /* circular com fundo dourado */
+    border-radius: 50%;
+    background-color: rgba(215, 162, 70, 0.15);
+    padding: 12px;
+    box-sizing: content-box;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 600;
+    color: #1f1f1f;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    font-family: 'Inter';
+    color: #555555;
+    line-height: 1.5;
+}   
+
+.funcionamento {
+    padding: 80px 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.funcionamentoLabel {
+    font-size: 13px;
+    font-family: 'Inter';
+    letter-spacing: 2px;
+    color: rgba(215, 162, 70, 1);
+    text-transform: uppercase;
+}
+
+.funcionamentoTitulo {
+    font-size: 28px;
+    font-family: 'Inter';
+    margin-top: 8px;
+    margin-bottom: 40px;
+    color: #1f1f1f;
+}
+
+.stepNumber {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(215, 162, 70, 1);
+    color: #000000;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px auto;
+}
+
+/* ── SERVIÇOS ── */
+.servicos {
+    padding: 80px 50px;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.servicosLabel {
+    font-size: 13px;
+    font-family: 'Inter';
+    letter-spacing: 2px;
+    color: rgba(215, 162, 70, 1);
+    text-transform: uppercase;
+}
+
+.servicosTitulo {
+    font-size: 28px;
+    font-family: 'Inter';
+    margin-top: 8px;
+    margin-bottom: 40px;
+    color: #1f1f1f;
+}
+
+.servicosContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    width: 100%;
+}
+
+.servicoCard {
+    flex: 1;
+    max-width: 360px;
+    height: 260px;
+    border-radius: 12px;
+    background-color: #1f1f1f;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.servicoCard:hover {
+    transform: translateY(-6px);
+}
+
+.servicoOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+    color: #ffffff;
+    text-align: left;
+}
+
+.servicoOverlay h3 {
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.servicoOverlay p {
+    font-size: 13px;
+    font-family: 'Inter';
+    color: #cccccc;
+    margin-bottom: 12px;
+}
+
+.servicoBtn {
+    background: none;
+    border: 1px solid rgba(215, 162, 70, 1);
+    color: rgba(215, 162, 70, 1);
+    font-family: 'Inter';
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.servicoBtn:hover {
+    background-color: rgba(215, 162, 70, 0.15);
+}
+
+/* ── ORÇAMENTO ── */
+.orcamento {
+    padding: 80px 50px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.orcamentoTexto {
+    flex: 1;
+    color: #ffffff;
+}
+
+.orcamentoLabel {
+    font-size: 13px;
+    font-family: 'Inter';
+    letter-spacing: 2px;
+    color: rgba(215, 162, 70, 1);
+    text-transform: uppercase;
+}
+
+.orcamentoTexto h2 {
+    font-size: 32px;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.orcamentoTexto p {
+    font-size: 15px;
+    font-family: 'Inter';
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+.orcamentoForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input {
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input:focus {
+    border-color: rgba(215, 162, 70, 1);
+}
+
+.input::placeholder {
+    color: #777777;
+}
+
+.botaoOrcamento {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(215, 162, 70, 1);
+    color: #000000;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.botaoOrcamento:hover {
+    background-color: rgb(206, 154, 65);
+    transform: translateY(-3px);
+}
+
+/* ── FOOTER ── */
+.footer {
+    background-color: #111111;
+    color: #ffffff;
+    font-family: 'Inter';
+}
+
+.footerTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 50px;
+    gap: 40px;
+}
+
+.footerLogo h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(215, 162, 70, 1);
+    margin-bottom: 10px;
+}
+
+.footerLogo p {
+    font-size: 13px;
+    color: #aaaaaa;
+    max-width: 200px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footerRedes {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.footerRedes a {
+    font-size: 12px;
+    color: #aaaaaa;
+    text-decoration: none;
+    border: 1px solid #333333;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.footerRedes a:hover {
+    border-color: rgba(215, 162, 70, 1);
+    color: rgba(215, 162, 70, 1);
+}
+
+.footerColuna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerColuna h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.footerColuna a {
+    font-size: 13px;
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footerColuna a:hover {
+    color: rgba(215, 162, 70, 1);
+}
+
+.footerColuna p {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.footerBottom {
+    border-top: 1px solid #222222;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.footerBottom p {
+    font-size: 12px;
+    color: #555555;
 }

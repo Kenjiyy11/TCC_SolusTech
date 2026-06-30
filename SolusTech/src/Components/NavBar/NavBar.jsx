@@ -1,4 +1,5 @@
-import styles from './NavBar.module.css';
+import { Link } from 'react-router-dom'
+import styles from './NavBar.module.css'
 
 function NavBar() {
   return (
@@ -7,13 +8,15 @@ function NavBar() {
         <h1>SolusTech</h1>
         <ul>
           <li className={styles.inicio}>Inicio</li>
-          <li >Compre sua Placa</li>
+          <li>Compre sua Placa</li>
           <li>Minha Casa</li>
-          <li className={styles.login}>Login</li>
+          <li className={styles.login}>
+            <Link to="/login">Login</Link>
+          </li>
         </ul>
       </div>
     </div>
   );
 }
 
-export default NavBar;
+export default NavBar
