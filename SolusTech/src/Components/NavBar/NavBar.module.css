@@ -38,9 +38,42 @@ margin-top: 15px;
 }
 
 
-.inicio{
-  color:rgba(215, 162, 70, 1);
+.inicio a{
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.inicio a:hover {
+  color: rgba(215, 162, 70, 1);
 }
 
 
+.container h1 {
+  color: rgba(215, 162, 70, 1);
+}
+
+.Loja a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Loja a:hover {
+  color: rgba(215, 162, 70, 1);
+}
+
+.login a {
+  background-color: rgba(215, 162, 70, 1);
+  color: #000000;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.login a:hover {
+  background-color: transparent;
+}
 

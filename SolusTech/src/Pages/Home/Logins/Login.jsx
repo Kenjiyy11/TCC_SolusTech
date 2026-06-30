@@ -1,8 +1,15 @@
+import NavBar from "../../../Components/NavBar/NavBar";
 import styles from "./login.module.css";
 import "boxicons/css/boxicons.min.css";
 
 function Login() {
   return (
+    <div>
+    
+    <NavBar/>
+
+
+
     <main className={styles.container}>
       <form className={styles.form}>
         <h1>Login</h1>
@@ -37,6 +44,8 @@ function Login() {
         </div>
       </form>
     </main>
+    
+    </div>
   );
 }
 
