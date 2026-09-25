@@ -1,4 +1,4 @@
-import styles from './Solustech.module.css';
+  import styles from './Solustech.module.css';
 import NavBar from '../../Components/NavBar/NavBar';
 import heroBg from '../../assets/headerimg.png';
 import painelImg from '../../assets/Solar.png';
