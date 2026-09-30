@@ -53,13 +53,23 @@ margin-top: 15px;
   color: rgba(215, 162, 70, 1);
 }
 
-.Loja a {
+.loja a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.Loja a:hover {
+.loja a:hover {
+  color: rgba(215, 162, 70, 1);
+}
+
+.cadastro a{
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cadastro a:hover {
   color: rgba(215, 162, 70, 1);
 }
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../../../Components/NavBar/NavBar";
-import styles from "./login.module.css";
+import styles from "./Login.module.css";
 import bgImg from "../../../assets/headerimg.png";
 import "boxicons/css/boxicons.min.css";
 
@@ -54,7 +54,7 @@ function Login() {
 
           <div className={styles.register}>
             <p>
-              Não tem conta? <a href="#">Cadastre-se</a>
+              Não tem conta? <a href="/Cadastro">Cadastre-se</a>
             </p>
           </div>
         </form>
