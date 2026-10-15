@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import styles from "./Cadastro.module.css";
 import bgImg from "../../assets/headerimg.png";
 
+
 // ---------- Máscaras ----------
 const maskCPF = (v) =>
   v
@@ -111,7 +112,7 @@ function Cadastro() {
       return;
     }
     setSaindo(true);
-    setTimeout(() => navigate("/login"), 400);
+    setTimeout(() => navigate("/"), 400);
   }
 
   const enviarCadastro = async () => {
@@ -177,9 +178,9 @@ function Cadastro() {
         className={`${styles.form} ${saindo ? styles.saindo : ""}`}
         onSubmit={handleSubmit}
       >
-        <a href="/login" onClick={handleVoltar} className={styles.voltar}>
-          ← Voltar
-        </a>
+         <a href="/" onClick={handleVoltar} className={styles.voltar}>
+                   ← Voltar
+            </a>
 
         <h1>Cadastro</h1>
 
