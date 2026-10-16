@@ -21,7 +21,7 @@ function NavBar() {
           <li>Minha Casa</li> 
   
           <li className={styles.inicio}>
-            <Link to="/cadastro">Cadastro</Link>
+            <Link to="/Cadastro">Cadastro</Link>
           </li>
  
           <li className={styles.login}>

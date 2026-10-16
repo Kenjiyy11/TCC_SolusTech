@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import emailjs from "@emailjs/browser";
+import { apiCadastro } from "../../api";
 import styles from "./Cadastro.module.css";
 import bgImg from "../../assets/headerimg.png";
 
@@ -116,36 +116,27 @@ function Cadastro() {
   }
 
   const enviarCadastro = async () => {
-    const templateParams = {
-      user_name: form.name.trim(),
-      user_email: form.email.trim(),
-      user_cpf: form.cpf,
-      user_cep: form.cep,
-      user_numero: form.numero,
-      user_rua: form.rua,
-      user_bairro: form.bairro,
-      user_cidade: form.cidade,
-      user_uf: form.uf,
-      // A senha NÃO é enviada por e-mail
-    };
-
     try {
       setSending(true);
-      await emailjs.send(
-        "service_augustocamargo",
-        "template_hpsbof6",
-        templateParams,
-        { publicKey: "tNT4SyGzY2a7nWy0m" }
-      );
+      await apiCadastro({
+        name: form.name.trim(),
+        email: form.email.trim(),
+        password: form.password,
+      });
       alert("Cadastro realizado com sucesso!");
       navigate("/login");
     } catch (error) {
-      console.error("Erro ao enviar e-mail:", error);
+      console.error("Erro ao cadastrar:", error);
       alert("Erro ao realizar o cadastro. Tente novamente.");
     } finally {
       setSending(false);
     }
   };
+
+
+
+
+      // A senha NÃO é enviada por e-mail
 
   const handleSubmit = (e) => {
   e.preventDefault();
