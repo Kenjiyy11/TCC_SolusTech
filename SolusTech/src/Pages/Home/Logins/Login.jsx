@@ -1,6 +1,5 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import NavBar from "../../../Components/NavBar/NavBar";
 import styles from "./Login.module.css";
 import bgImg from "../../../assets/headerimg.png";
 import "boxicons/css/boxicons.min.css";

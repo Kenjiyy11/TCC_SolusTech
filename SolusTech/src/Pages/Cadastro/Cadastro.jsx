@@ -151,6 +151,10 @@ function Cadastro() {
       alert("Digite um CEP válido para continuar.");
       return;
     }
+    if (!cpfValido(form.cpf)) {
+      alert("CPF inválido. Digite um CPF válido.");
+      return;
+    }
     setEtapa(2);
     return;
   }

@@ -1,9 +1,9 @@
-USE master 
+USE master
 GO
 
-IF EXISTS(select * from sys.databases where name='bd_pizzaria_2x') 
+IF EXISTS(select * from sys.databases where name='bd_pizzaria_2x')
 	DROP DATABASE bd_pizzaria_2x
-GO 
+GO
 -- CRIAR UM BANCO DE DADOS
 CREATE DATABASE bd_pizzaria_2x
 GO
@@ -12,7 +12,7 @@ USE bd_pizzaria_2x
 GO
 
 CREATE TABLE Usuario
-( 
+(
    id			   	   INT				IDENTITY,
    nome				   VARCHAR(254)	NOT NULL,
    username			   VARCHAR(255)	NOT NULL UNIQUE,
@@ -38,7 +38,7 @@ VALUES ('Ordnael Zurc', 'ordnael@email.com.br', '$2a$10$Su2UIixHK/L2kAMDQAB1AusV
 GO
 
 CREATE TABLE RecuperarSenha
-( 
+(
    id				   INT				IDENTITY,
    email			   VARCHAR(254)	NOT NULL, -- username
    codigo			CHAR(6)			NOT NULL,
@@ -64,9 +64,9 @@ CREATE TABLE Mensagem
 	PRIMARY KEY (id)
 );
 GO
-INSERT Mensagem (dataMensagem, emissor, email, telefone, texto, dataAtualizacao, statusMensagem) 
+INSERT Mensagem (dataMensagem, emissor, email, telefone, texto, dataAtualizacao, statusMensagem)
 VALUES (GETDATE(), 'Ordnael Zurc', 'ordnael@username.com', '(11) 98765-4123', 'Mensagem de teste', NULL, 'ATIVO')
-INSERT Mensagem (dataMensagem, emissor, email, telefone, texto, dataAtualizacao, statusMensagem) 
+INSERT Mensagem (dataMensagem, emissor, email, telefone, texto, dataAtualizacao, statusMensagem)
 VALUES (GETDATE(), 'Maria Onete', 'maria@username.com', null, 'Segunda mensagem de teste', NULL, 'ATIVO')
 GO
 

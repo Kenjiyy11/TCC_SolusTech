@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from '../../../Components/NavBar/NavBar.jsx';
 
