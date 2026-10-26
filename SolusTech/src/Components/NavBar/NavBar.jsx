@@ -17,13 +17,16 @@ function NavBar() {
           <li className={styles.loja}>
             <Link to="/Loja">Compre sua Placa</Link>
           </li>
- 
-          <li>Minha Casa</li> 
-  
+
+          <li className={styles.emBreve}>
+            Minha Casa
+            <span className={styles.tooltip}>Em breve</span>
+          </li>
+
           <li className={styles.inicio}>
             <Link to="/Cadastro">Cadastro</Link>
           </li>
- 
+
           <li className={styles.login}>
             <Link to="/login">Login</Link>
           </li>
