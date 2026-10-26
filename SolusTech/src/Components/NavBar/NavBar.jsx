@@ -18,10 +18,17 @@ function NavBar() {
             <Link to="/Loja">Compre sua Placa</Link>
           </li>
 
-          <li className={styles.emBreve}>
-            Minha Casa
-            <span className={styles.tooltip}>Em breve</span>
-          </li>
+         
+<li className={styles.inicio}>
+  <a
+    href="https://solustech-67969d89-t3gw.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Minha Casa
+  </a>
+</li>
+
 
           <li className={styles.inicio}>
             <Link to="/Cadastro">Cadastro</Link>
