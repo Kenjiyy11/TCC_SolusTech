@@ -30,7 +30,7 @@ function Solustech() {
         <div className={styles.sobreContainer}>
           <span>Sobre a SolusTech</span>
           <h2>Energia limpa, inteligente e ao seu alcance.</h2>
-          <p>A SolusTech nasceu para transformar a forma como você consome energia solar, com tecnologia de ponta, instalação profissional e acompanhamento contínuo.</p>
+          <p>A SolusTech nasceu para transformar a maneira como você consome energia, oferecendo soluções solares modernas, econômicas e sustentáveis. Com tecnologia de ponta, instalação profissional e acompanhamento contínuo, buscamos proporcionar mais economia, eficiência e autonomia energética, contribuindo para um futuro mais limpo e sustentável.</p>
         </div>
 
         {/* Imagem lateral */}
